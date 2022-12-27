@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> 입사 지원서 </h1>
+    <h2> 필수 정보 </h2>
+    <div>
+        <label for="name">이름</label>
+        <input type="text" id="name" name="name">
+      </div>
+
+
+        <div>
+        <label for="bithdate">생년월일</label>
+        <input type="date" name="birthdate" id="birthdate">
+        </div>
+
+        <div>
+        <label for="gender">성별</label>
+        <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female" selected>Female</option>  <!-- 젤 처음 보여진느 -->
+            <option value="other">Other</option>
+        </select>
+        </div>
+        <h2> 개발자지원왜? </h2>
+
+         <!-- Textarea 여러줄 입력시..-->
+         <div>
+            <label for="message">메세지</label><br>
+            <textarea name="message" id="message" cols="50" rows="5"></textarea>
+          </div>
+
+
+        <h2> 해본거  </h2>
+
+        <div>
+        
+            <!-- name 속성은 서버로 보내질 값 앞에 붙음 -->
+            <input type="checkbox" name="like1" value="bike" id="bike"> python..
+            <input type="checkbox" name="like2" value="car" id="car"> java
+            <input type="checkbox" name="like3" value="boat" id="boat"> ruby
+            <input type="checkbox" name="like4" value="abc" id="abc"> c++
+          </div>
+
+          <h2> 원하는 부서  </h2>
+          <div>
+          
+            <!-- name 속성은 서버로 보내질 값 앞에 붙음 -->
+            <input type="radio" name="membership" value="simple" id="simple"> 프론
+            <input type="radio" name="membership" value="standard" id="standard"> 백
+            <input type="radio" name="membership" value="super" id="super" checked> db
+         </div>
+
+</body>
+</html>
